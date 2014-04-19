@@ -7,16 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EFA1CDB21900269D0064285D /* world.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EFA1CDB11900269D0064285D /* world.cpp */; };
+		EFA1CDB519011FDA0064285D /* worldManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EFA1CDB319011FDA0064285D /* worldManager.cpp */; };
+		EFA1CDBB190146240064285D /* vehicle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EFA1CDB9190146240064285D /* vehicle.cpp */; };
+		EFA1CE0B1902693B0064285D /* BulletCollision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFA1CE051902693B0064285D /* BulletCollision.framework */; };
+		EFA1CE0C1902693B0064285D /* BulletDynamics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFA1CE061902693B0064285D /* BulletDynamics.framework */; };
+		EFA1CE0D1902693B0064285D /* BulletMultiThreaded.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFA1CE071902693B0064285D /* BulletMultiThreaded.framework */; };
+		EFA1CE0E1902693B0064285D /* BulletSoftBody.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFA1CE081902693B0064285D /* BulletSoftBody.framework */; };
+		EFA1CE0F1902693B0064285D /* LinearMath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFA1CE091902693B0064285D /* LinearMath.framework */; };
+		EFA1CE101902693B0064285D /* MiniCL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFA1CE0A1902693B0064285D /* MiniCL.framework */; };
 		EFAAC41B18F00A4100B1D0CD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EFAAC41A18F00A4100B1D0CD /* main.cpp */; };
 		EFAAC41D18F00A4100B1D0CD /* testBullet.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = EFAAC41C18F00A4100B1D0CD /* testBullet.1 */; };
+		EFAAC42418F00A5500B1D0CD /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAAC42318F00A5500B1D0CD /* GLUT.framework */; };
+		EFAAC42618F00A5B00B1D0CD /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAAC42518F00A5B00B1D0CD /* OpenGL.framework */; };
+		EFAAC42818F00A5F00B1D0CD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAAC42718F00A5F00B1D0CD /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		EFAAC41518F00A4100B1D0CD /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			dstPath = usr/share/man/man1;
+			dstSubfolderSpec = 16;
 			files = (
 				EFAAC41D18F00A4100B1D0CD /* testBullet.1 in CopyFiles */,
 			);
@@ -25,9 +37,25 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EF41EEB518F55DD200FF3B01 /* main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		EFA1CDB0190023D30064285D /* world.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = world.h; sourceTree = "<group>"; };
+		EFA1CDB11900269D0064285D /* world.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = world.cpp; sourceTree = "<group>"; };
+		EFA1CDB319011FDA0064285D /* worldManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = worldManager.cpp; sourceTree = "<group>"; };
+		EFA1CDB419011FDA0064285D /* worldManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = worldManager.h; sourceTree = "<group>"; };
+		EFA1CDB9190146240064285D /* vehicle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vehicle.cpp; sourceTree = "<group>"; };
+		EFA1CDBA190146240064285D /* vehicle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vehicle.h; sourceTree = "<group>"; };
+		EFA1CE051902693B0064285D /* BulletCollision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BulletCollision.framework; path = Library/BulletCollision.framework; sourceTree = "<group>"; };
+		EFA1CE061902693B0064285D /* BulletDynamics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BulletDynamics.framework; path = Library/BulletDynamics.framework; sourceTree = "<group>"; };
+		EFA1CE071902693B0064285D /* BulletMultiThreaded.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BulletMultiThreaded.framework; path = Library/BulletMultiThreaded.framework; sourceTree = "<group>"; };
+		EFA1CE081902693B0064285D /* BulletSoftBody.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BulletSoftBody.framework; path = Library/BulletSoftBody.framework; sourceTree = "<group>"; };
+		EFA1CE091902693B0064285D /* LinearMath.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LinearMath.framework; path = Library/LinearMath.framework; sourceTree = "<group>"; };
+		EFA1CE0A1902693B0064285D /* MiniCL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MiniCL.framework; path = Library/MiniCL.framework; sourceTree = "<group>"; };
 		EFAAC41718F00A4100B1D0CD /* testBullet */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = testBullet; sourceTree = BUILT_PRODUCTS_DIR; };
-		EFAAC41A18F00A4100B1D0CD /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		EFAAC41A18F00A4100B1D0CD /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; wrapsLines = 0; };
 		EFAAC41C18F00A4100B1D0CD /* testBullet.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = testBullet.1; sourceTree = "<group>"; };
+		EFAAC42318F00A5500B1D0CD /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		EFAAC42518F00A5B00B1D0CD /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		EFAAC42718F00A5F00B1D0CD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +63,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFA1CE0B1902693B0064285D /* BulletCollision.framework in Frameworks */,
+				EFA1CE0C1902693B0064285D /* BulletDynamics.framework in Frameworks */,
+				EFA1CE0D1902693B0064285D /* BulletMultiThreaded.framework in Frameworks */,
+				EFA1CE0E1902693B0064285D /* BulletSoftBody.framework in Frameworks */,
+				EFA1CE0F1902693B0064285D /* LinearMath.framework in Frameworks */,
+				EFA1CE101902693B0064285D /* MiniCL.framework in Frameworks */,
+				EFAAC42818F00A5F00B1D0CD /* Cocoa.framework in Frameworks */,
+				EFAAC42618F00A5B00B1D0CD /* OpenGL.framework in Frameworks */,
+				EFAAC42418F00A5500B1D0CD /* GLUT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +81,15 @@
 		EFAAC40E18F00A4100B1D0CD = {
 			isa = PBXGroup;
 			children = (
+				EFA1CE051902693B0064285D /* BulletCollision.framework */,
+				EFA1CE061902693B0064285D /* BulletDynamics.framework */,
+				EFA1CE071902693B0064285D /* BulletMultiThreaded.framework */,
+				EFA1CE081902693B0064285D /* BulletSoftBody.framework */,
+				EFA1CE091902693B0064285D /* LinearMath.framework */,
+				EFA1CE0A1902693B0064285D /* MiniCL.framework */,
+				EFAAC42718F00A5F00B1D0CD /* Cocoa.framework */,
+				EFAAC42518F00A5B00B1D0CD /* OpenGL.framework */,
+				EFAAC42318F00A5500B1D0CD /* GLUT.framework */,
 				EFAAC41918F00A4100B1D0CD /* testBullet */,
 				EFAAC41818F00A4100B1D0CD /* Products */,
 			);
@@ -62,6 +108,13 @@
 			children = (
 				EFAAC41A18F00A4100B1D0CD /* main.cpp */,
 				EFAAC41C18F00A4100B1D0CD /* testBullet.1 */,
+				EF41EEB518F55DD200FF3B01 /* main.h */,
+				EFA1CDB0190023D30064285D /* world.h */,
+				EFA1CDB11900269D0064285D /* world.cpp */,
+				EFA1CDB319011FDA0064285D /* worldManager.cpp */,
+				EFA1CDB419011FDA0064285D /* worldManager.h */,
+				EFA1CDB9190146240064285D /* vehicle.cpp */,
+				EFA1CDBA190146240064285D /* vehicle.h */,
 			);
 			path = testBullet;
 			sourceTree = "<group>";
@@ -117,6 +170,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFA1CDBB190146240064285D /* vehicle.cpp in Sources */,
+				EFA1CDB21900269D0064285D /* world.cpp in Sources */,
+				EFA1CDB519011FDA0064285D /* worldManager.cpp in Sources */,
 				EFAAC41B18F00A4100B1D0CD /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,6 +253,11 @@
 		EFAAC42118F00A4100B1D0CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/marcobedulli/Desktop/Library,
+					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -204,6 +265,11 @@
 		EFAAC42218F00A4100B1D0CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/marcobedulli/Desktop/Library,
+					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -227,6 +293,7 @@
 				EFAAC42218F00A4100B1D0CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
